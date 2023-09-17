@@ -1,5 +1,9 @@
+"use client";
+
 const page = () => {
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    alert("Thank you for your msg");
+  };
   return (
     <div className=" w-full h-screen flex items-center justify-center relative">
       <div className=" md:w-1/3 md:h-3/4 w-5/6 bg-neutral-900 rounded-2xl drop-shadow-2xl flex flex-col p-6">
@@ -11,7 +15,7 @@ const page = () => {
         </div>
         <form className=" w-full h-full flex flex-col items-center justify-center">
           <label className=" flex flex-col w-full h-5/6 md:gap-6 gap-4">
-            <div>
+            <div className=" flex flex-col md:gap-2">
               <div className="md:text-3xl text-lg font-semibold">
                 {" "}
                 What do you want to tell me?
@@ -26,7 +30,10 @@ const page = () => {
               placeholder="Your message"
             />
           </label>
-          <button className=" px-4 py-2 w-fit bg-purple-400 self-end my-4 rounded-xl">
+          <button
+            className=" px-4 py-2 w-fit bg-purple-400 self-end my-4 rounded-xl"
+            onClick={handleSubmit}
+          >
             Send
           </button>
         </form>
