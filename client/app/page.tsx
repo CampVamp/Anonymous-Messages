@@ -1,7 +1,7 @@
 const page = () => {
   const handleSubmit = () => {};
   return (
-    <div className=" w-full h-screen flex items-center justify-center">
+    <div className=" w-full h-screen flex items-center justify-center relative">
       <div className=" md:w-1/3 md:h-3/4 w-5/6 bg-neutral-900 rounded-2xl drop-shadow-2xl flex flex-col p-6">
         <div className="md:py-6 py-4 md:text-4xl text-xl text-center flex flex-col">
           Send me messages{" "}
@@ -30,6 +30,9 @@ const page = () => {
             Send
           </button>
         </form>
+      </div>
+      <div className=" absolute md:bottom-0 bottom-4">
+        Crafted with ❤️ by Ajay
       </div>
     </div>
   );
