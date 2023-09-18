@@ -59,7 +59,7 @@ const page = () => {
           </button>
         </form>
       </div>
-      <div className=" absolute md:bottom-0 bottom-4">
+      <div className=" absolute md:bottom-4 bottom-8">
         Crafted with ❤️ by Ajay
       </div>
     </div>
